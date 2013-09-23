@@ -55,6 +55,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /**** Page Default **** */
+* {
+  outline: none;
+}
+
 .hidden {
   display: none !important;
 }
@@ -153,7 +157,7 @@ div#skillsContainer form input, div#skillsContainer form select {
   font-size: 120%;
 }
 div#skillsContainer form input {
-  width: 275px;
+  width: 250px;
 }
 div#skillsContainer form select {
   padding: 9px 5px;
@@ -161,7 +165,7 @@ div#skillsContainer form select {
 div#skillsContainer form a#addSkill {
   font-weight: bold;
   font-size: 200%;
-  color: #0b6909;
+  color: #34ad1c;
 }
 div#skillsContainer h3#skillStatus {
   -webkit-border-radius: 0 0 10px 10px;
