@@ -1,10 +1,12 @@
+SKILLS
+
 This is an application to record your skill set.
 
 - To add a new skill, in the form field provided, enter your skill and select a varying level of competancy the click the tick, or hit enter.
 - To remove a skill, click on the 'X' that appears along side the skill you wish to remove
 - You are not able to enter empty skills, and you are not allowed to enter the same skill more than once.
 
-Running the application:
+RUNNING THE APPLICATION:
 
 There are two ways to run the Skills Application:
 
@@ -18,7 +20,6 @@ http://dev.skills.com/ -> where dev.skills.com points to 127.0.0.1
 
 Please Note: Your browser may ask for permission to use local storage - in this instance, please allow this. Local storage is used to persist your skills list on the browser.
 
+EXECUTING THE TESTS:
 
-Running the tests:
-
-To run tests, please setup the application as stated in method 2) above. Once this is complete, you can go to http://dev.skills.com/ to run the application, or to http://dev.skills.com/tests/ to run the tests.
+To executre tests, please setup the application as stated in method 2) above. Once this is complete, you can go to http://dev.skills.com/tests/ to run the tests.
