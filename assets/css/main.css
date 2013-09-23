@@ -1,0 +1,183 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/**** Page Default **** */
+.hidden {
+  display: none !important;
+}
+
+body {
+  font: 105% Calibri, Sans-serif;
+}
+
+/**** Structure **** */
+div.page {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/**** Fonts **** */
+a {
+  text-decoration: none;
+}
+
+.error {
+  color: #db0e0e;
+  margin-top: 5px;
+}
+
+/**** Content **** */
+div#skillsContainer {
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid #dddddd;
+  border-top: 0;
+  background: #eeeeee;
+  padding: 10px;
+}
+div#skillsContainer h1 {
+  text-align: center;
+  font-size: 120%;
+}
+div#skillsContainer ul li {
+  padding: 10px;
+  border-left: 5px solid white;
+  margin-bottom: 2px;
+}
+div#skillsContainer ul li a {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  padding: 0 5px;
+  color: #dddddd;
+  float: right;
+  font-weight: bold;
+}
+div#skillsContainer ul li a:hover {
+  background: #db0e0e;
+  color: white;
+}
+div#skillsContainer ul li span {
+  display: none;
+}
+div#skillsContainer ul li:hover {
+  background: white;
+}
+div#skillsContainer ul li:hover span {
+  display: inline;
+}
+div#skillsContainer ul li.rating-1 {
+  border-color: #d1d4fd;
+}
+div#skillsContainer ul li.rating-2 {
+  border-color: #a5abfd;
+}
+div#skillsContainer ul li.rating-3 {
+  border-color: #6b75fd;
+}
+div#skillsContainer ul li.rating-4 {
+  border-color: #3543fd;
+}
+div#skillsContainer ul li.rating-5 {
+  border-color: #0012ff;
+}
+div#skillsContainer form {
+  margin-top: 10px;
+  overflow: hidden;
+}
+div#skillsContainer form input, div#skillsContainer form select, div#skillsContainer form a {
+  float: left;
+}
+div#skillsContainer form input, div#skillsContainer form select {
+  border: 1px solid #dddddd;
+  padding: 10px 5px;
+  margin-right: 5px;
+  font-size: 120%;
+}
+div#skillsContainer form input {
+  width: 275px;
+}
+div#skillsContainer form select {
+  padding: 9px 5px;
+}
+div#skillsContainer form a#addSkill {
+  font-weight: bold;
+  font-size: 200%;
+  color: #0b6909;
+}
+div#skillsContainer h3#skillStatus {
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  padding: 2px 5px;
+  background: #0012ff;
+  color: white;
+  margin: 10px -10px -10px;
+}
+
+/**** Browser Hacks **** */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  div#skillsContainer form a {
+    margin-top: 5px;
+  }
+}

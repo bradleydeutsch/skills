@@ -1,0 +1,101 @@
+@import compass/utilities
+@import compass/css3
+
+@import colours
+
++global-reset
+
+/***** Page Default *****/
+
+.hidden
+	display: none !important
+
+body
+	font: 105% Calibri, Sans-serif
+
+/***** Structure *****/
+
+div.page
+	width: 500px
+	margin: 0 auto
+
+/***** Fonts *****/
+
+a
+	text-decoration: none
+
+.error
+	color: $error
+	margin-top: 5px
+
+/***** Content *****/
+
+div#skillsContainer
+	+border-radius(0 0 10px 10px)
+	border: 1px solid $border
+	border-top: 0
+	background: $background
+	padding: 10px
+	h1
+		text-align: center
+		font-size: 120%
+	ul
+		li
+			padding: 10px
+			border-left: 5px solid $white
+			margin-bottom: 2px
+			a
+				+border-radius(20px)
+				padding: 0 5px
+				color: $border
+				float: right
+				font-weight: bold
+				&:hover
+					background: $error
+					color: $white
+			span
+				display: none
+			&:hover
+				background: $white
+				span
+					display: inline 
+			&.rating-1
+				border-color: $rating1
+			&.rating-2
+				border-color: $rating2
+			&.rating-3
+				border-color: $rating3
+			&.rating-4
+				border-color: $rating4
+			&.rating-5
+				border-color: $rating5
+	form
+		margin-top: 10px
+		overflow: hidden
+		input, select, a
+			float: left
+		input, select
+			border: 1px solid $border
+			padding: 10px 5px
+			margin-right: 5px
+			font-size: 120%
+		input
+			width: 275px
+		select
+			padding: 9px 5px
+		a#addSkill
+			font-weight: bold
+			font-size: 200%
+			color: $done
+	h3#skillStatus
+		+border-radius(0 0 10px 10px)
+		padding: 2px 5px
+		background: $rating5
+		color: $white
+		margin: 10px -10px -10px
+
+/***** Browser Hacks *****/
+
+@media screen and (-webkit-min-device-pixel-ratio: 0)
+	div#skillsContainer form a
+		margin-top: 5px

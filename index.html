@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Skills</title>
+		
+		<link rel="stylesheet" href="assets/css/main.css" type="text/css" media="all" />
+	</head>
+	<body>
+		<div class="page">
+			<div id="loadingContainer">
+				<h1>Please wait...</h1>
+			</div>
+			<div id="skillsContainer" class="hidden">
+				<h1>Your Skills List</h1>
+				
+				<ul id="skills"></ul>
+				
+				<form id="newSkillForm">
+					<input type="text" id="newSkill" value="" placeholder="E.g. I can juggle helium" />
+					<select id="newSkillRating"></select>
+					<a href="#" id="addSkill">&#10004;</a>
+				</form>
+				
+				<h3 id="skillStatus" class="hidden">From a total of <span></span> skills, you're excellent at <span></span></h3>
+			</div>
+		</div>
+		
+		<script type="text/template" id="skill-template">
+			<%= skill %> <span>(<%= getRatings()[rating] %>)</span>
+			<a href="#" class="removeSkill">X</a>
+		</script>
+		
+		<script type="text/javascript" src="assets/js/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery-ui-1.10.3.min.js"></script>
+		<script type="text/javascript" src="assets/js/underscore-1.5.2.min.js"></script>
+		<script type="text/javascript" src="assets/js/backbone-1.0.0.min.js"></script>
+		<script type="text/javascript" src="assets/js/backbone-local-storage-1.1.6.min.js"></script>
+		<script type="text/javascript" src="assets/js/utils.js"></script>
+		<script type="text/javascript" src="assets/js/skillsApp.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function () {
+				MySkills = new SkillApplication();
+			});
+		</script>
+	</body>
+</html>
